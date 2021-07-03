@@ -1,1 +1,68 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-2);
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+:root {
+  --color-primary: hsl(343, 82%, 55%);
+  --color-primary-light: hsl(345, 100%, 60%);
+  --color-primary-dark: hsl(338, 66%, 44%);
+  --color-grey-light-1: hsl(0, 9%, 98%);
+  --color-grey-light-2: hsl(0, 8%, 95%);
+  --color-grey-light-3: hsl(0, 6%, 94%);
+  --color-grey-light-4: hsl(0, 0%, 80%);
+  --color-grey-dark-1: hsl(0, 0%, 20%);
+  --color-grey-dark-2: hsl(0, 0%, 47%);
+  --color-grey-dark-3: hsl(0, 0%, 60%);
+  --color-white: hsl(0, 0%, 100%);
+  --shadow-dark: 0 2rem 6rem hsla(0, 0%, 0%, 0.3);
+  --shadow-light: 0 2rem 5rem hsla(0, 0%, 0%, 0.088);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+}
+
+.header {
+  height: 7rem;
+  background-color: var(--color-white);
+  border-bottom: var(--color-grey-light-2);
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+}
+
+.hotel-view {
+  background-color: var(--color-white);
+  flex: 1;
+}
+/*# sourceMappingURL=main.css.map */

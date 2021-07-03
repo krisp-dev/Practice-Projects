@@ -1,20 +1,23 @@
 //COLOR SCHEME
-
+:root {
 //Primary colors
-$color-primary: hsl(343, 82%, 55%);
-$color-primary-light: hsl(345, 100%, 60%);
-$color-primary-dark: hsl(338, 66%, 44%);
+--color-primary: hsl(343, 82%, 55%);
+--color-primary-light: hsl(345, 100%, 60%);
+--color-primary-dark: hsl(338, 66%, 44%);
 
 //Grey colors
-$color-grey-light-1: hsl(0, 9%, 98%);
-$color-grey-light-2: hsl(0, 8%, 95%);
-$color-grey-light-3: hsl(0, 6%, 94%);
-$color-grey-light-4: hsl(0, 0%, 80%);
+--color-grey-light-1: hsl(0, 9%, 98%);
+--color-grey-light-2: hsl(0, 8%, 95%);
+--color-grey-light-3: hsl(0, 6%, 94%);
+--color-grey-light-4: hsl(0, 0%, 80%);
 
-$color-grey-dark-1: hsl(0, 0%, 20%);
-$color-grey-dark-2: hsl(0, 0%, 47%);
-$color-grey-dark-3: hsl(0, 0%, 60%);
+--color-grey-dark-1: hsl(0, 0%, 20%);
+--color-grey-dark-2: hsl(0, 0%, 47%);
+--color-grey-dark-3: hsl(0, 0%, 60%);
+
+--color-white: hsl(0, 0%, 100%);
 
 //Background shadows
-$shadow-dark: 0 2rem 6rem hsla(0, 0%, 0%, 0.3);
-$shadow-light: 0 2rem 5rem hsla(0, 0%, 0%, 0.088);
+--shadow-dark: 0 2rem 6rem hsla(0, 0%, 0%, 0.3);
+--shadow-light: 0 2rem 5rem hsla(0, 0%, 0%, 0.088);
+}
