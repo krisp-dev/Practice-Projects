@@ -472,7 +472,8 @@
     }
 
     &:hover {
-        background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+        transform: scale(1.075);
+        transition: transform .2s;
     }
 
     &:hover &__visible {
@@ -481,5 +482,26 @@
 
     &:hover &__invisible {
         top: 0;
+    }
+}
+
+
+//////////////////////////////////////  
+///// ANIMATIONS SECTION
+.gradient {
+    animation: gradient 4s ease infinite;
+    background-image: linear-gradient(125deg, var(--color-primary-light2), var(--color-primary), var(--color-primary-dark));
+    background-size: 800% 800%
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 1% 80%
+    }
+    50% {
+        background-position: 99% 20%
+    }
+    100% {
+        background-position: 1% 80%
     }
 }
