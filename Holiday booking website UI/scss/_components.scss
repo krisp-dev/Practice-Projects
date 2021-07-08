@@ -16,6 +16,12 @@
     align-items: center;
     justify-content: center;
 
+    @include media(smallest) {
+        order: 1;
+        flex: 0 0 100%;
+        background-color: var(--color-grey-light-2);
+    }
+
     &__input {
         font-family: inherit;
         color: inherit;
@@ -126,11 +132,24 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @include media(medium) {
+        display: flex;
+        margin: 0;
+    }
+
     &__item {
         position: relative;
 
         &:not(:last-child) {
             margin-bottom: .5rem;
+
+            @include media(medium) {
+                margin-bottom: 0;
+            }
+        }
+
+        @include media(medium) {
+            flex: 1;
         }
 
         &:before {
@@ -171,6 +190,16 @@
 
         display: flex;
         align-items: center;
+
+        @include media(medium) {
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        @include media(small) {
+            flex-direction: column;
+            padding: 1.5rem .5rem;
+        }
     }
 
     &__icon {
@@ -178,6 +207,13 @@
         width: 1.75rem;
         margin-right: 2rem;
         fill: currentColor; //color of the parent element (.side-nav__link)
+
+        @include media(small) {
+            margin-right: 0;
+            margin-bottom: .5rem;
+            height: 1.5rem;
+            width: 1.5rem;
+        }
     }
 }
 
@@ -201,17 +237,30 @@
     align-items: center;
     border-bottom: var(--bottom-line);
 
+    @include media(smallest) {
+        flex-direction: column;
+    }
+
     &__heading {
         font-size: 2.25rem;
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
+
+        @include media(small) {
+            font-size: 1.75rem;
+            padding: 1.25rem 2rem;
+        }
     }
 
     &__stars {
         margin-right: auto;
         display: flex;
+
+        @include media(smallest) {
+            margin: -1rem auto .5rem;
+        }
     }
 
     &__icon-star,
@@ -225,6 +274,10 @@
         font-size: 1.2rem;
         display: flex;
         align-items: center;
+
+        @include media(smallest) {
+            margin-bottom: 1rem;
+        }
     }
 
     &__icon-location {
@@ -242,12 +295,25 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
+        @include media(small) {
+            padding: 0 1.5rem;
+        }
+
+        @include media(smallest) {
+            margin-left: 0;
+            padding: .5rem;
+        }
     }
 
     &__rating-average {
         font-size: 2.25rem;
         font-weight: 300;
         margin-bottom: -3px;
+
+        @include media(small) {
+            font-size: 1.75rem;
+        }
     }
 
     &__rating-count {
@@ -345,6 +411,10 @@
         margin-right: auto;
     }
 
+    &__friends {
+        display: flex;
+    }
+
     &__photo {
         height: 4rem;
         width: 4rem;
@@ -353,7 +423,7 @@
         box-sizing: content-box; //fix for border around the photos
 
         &:not(:last-child) {
-            margin-right: -1.5rem;
+            margin-right: -2rem;
         }
     }
 }
@@ -369,6 +439,11 @@
 
     position: relative;
     overflow: hidden;
+
+    @include media(medium) {
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
 
     &__text {
         margin-bottom: 2rem;
@@ -428,6 +503,11 @@
 .cta {
     padding: 3.5rem 0;
     text-align: center;
+
+    @include media(medium) {
+        padding: 2.5rem 0;
+        margin: 0 1rem;
+    }
 
     &__book-now {
         font-size: 2rem;

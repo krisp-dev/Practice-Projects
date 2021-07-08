@@ -5,6 +5,12 @@
     box-shadow: var(--shadow-dark);
 
     min-height: 50rem;
+
+    @include media(largest) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 .header {
@@ -16,10 +22,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include media(smallest) {
+        flex-wrap: wrap;
+        height: 11rem;
+        align-content: space-around;
+    }
 }
 
 .content {
     display: flex;
+
+    @include media(medium) {
+        flex-direction: column;
+    }
 }
 
 .sidebar {
@@ -38,6 +54,14 @@
     background-color: var(--color-grey-light-1);
     border-bottom: var(--bottom-line);
     font-size: 1.4rem;
+
+    @include media(medium) {
+        padding: 3rem;
+    }
+
+    @include media(small) {
+        flex-direction: column;
+    }
 }
 
 .description {
@@ -46,6 +70,16 @@
     padding: 3rem;
     flex: 0 0 60%;
     margin-right: 4.5rem;
+
+    @include media(medium) {
+        padding: 2rem;
+        margin-right: 3rem;
+    }
+
+    @include media(small) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
 }
 
 .user-reviews {

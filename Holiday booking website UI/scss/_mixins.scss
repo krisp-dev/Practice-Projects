@@ -1,0 +1,26 @@
+//MEDIA QUERY MANAGER
+//
+//divide px's by 16 to get em's (?px / 16 = ?em)
+//desktop first approach so have to use max-width for media
+
+@mixin media($breakpoint) {
+    @if $breakpoint == largest {
+        @media (max-width: 75em) { @content }; //1200px / 16 = 75em
+    }
+
+    @if $breakpoint == large {
+        @media (max-width: 68.75em) { @content }; //1100px / 16 = 68.75em
+    }
+
+    @if $breakpoint == medium {
+        @media (max-width: 56.25em) { @content }; //900px / 16 = 56.25em
+    }
+
+    @if $breakpoint == small {
+        @media (max-width: 37.5em) { @content }; //600px / 16 = 37.5em
+    }
+
+    @if $breakpoint == smallest {
+        @media (max-width: 31.25em) { @content }; //500px / 16 = 31.25em
+    }
+}
