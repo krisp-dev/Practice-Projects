@@ -1,5 +1,9 @@
 'use strict';
 
+/* ==================
+      GAME LOGIC
+===================== */
+
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
@@ -62,4 +66,37 @@ again.addEventListener('click', function () {
   guess.value = '';
   body.style.backgroundColor = '#222';
   number.style.width = '15rem';
+});
+
+/* ==================
+      MODAL WINDOW
+===================== */
+
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnCloseModal = document.querySelector('.close-modal');
+const btnOpenModal = document.querySelector('.show-modal');
+
+// Remove hidden classes
+const openModal = function () {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+
+// Add hidden classes
+const closeModal = function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+// Event listeners for button, X and overlay(click outside modal)
+btnOpenModal.addEventListener('click', openModal);
+btnCloseModal.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
+
+// Close modal using Esc/Escape key
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal();
+  }
 });
