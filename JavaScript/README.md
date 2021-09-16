@@ -1,1 +1,2 @@
-Testing
+- **Guess my number** [Live Demo](https://krisp-dev.github.io/Practice-Projects/JavaScript/Guess%20my%20number/index.html)
+- **Pig game** [Live Demo](https://krisp-dev.github.io/Practice-Projects/JavaScript/Pig%20dice%20game/index.html)
