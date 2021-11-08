@@ -1,0 +1,9 @@
+/*=============== MEDIA QUERY MANAGER ===============*/
+@mixin media($breakpoint) {
+   @if $breakpoint == small {
+      //767px / 16 = 47.9375em
+      @media (max-width: 47.9375em) {
+         @content;
+      }
+   }
+}
