@@ -5,11 +5,11 @@
 :root {
   --header-height: 3rem;
   /*========== Colors ==========*/
-  --hue: 45;
-  --sat: 98%;
+  --hue: 205;
+  --sat: 90%;
   --first-color: hsl(var(--hue), var(--sat), 60%);
-  --first-color-light: hsl(var(--hue), var(--sat), 85%);
-  --first-color-lighten: hsl(var(--hue), var(--sat), 80%);
+  --first-color-light: hsl(var(--hue), var(--sat), 82.5%);
+  --first-color-lighter: hsl(var(--hue), var(--sat), 77.5%);
   --first-color-alt: hsl(var(--hue), var(--sat), 53%);
   --title-color: hsl(var(--hue), 4%, 15%);
   --text-color: hsl(var(--hue), 4%, 35%);
@@ -26,6 +26,7 @@
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
+  /*========== Responsive typography ==========*/
   /*========== Font weight ==========*/
   --font-semi-bold: 600;
   --font-bold: 700;
@@ -117,6 +118,15 @@ img {
 .svg__img {
   width: 300px;
   justify-self: center;
+}
+
+/*=============== ABOUT ===============*/
+.about__container {
+  gap: 2.5rem;
+}
+
+.about__data {
+  text-align: center;
 }
 
 /*=============== BUTTONS ===============*/
