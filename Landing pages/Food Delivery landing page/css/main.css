@@ -259,6 +259,30 @@ img {
   font-size: 1.5rem;
 }
 
+/*=============== CONTACT ===============*/
+.contact__container {
+  padding-bottom: 3rem;
+}
+
+.contact__description {
+  text-align: center;
+}
+
+.contact__content {
+  row-gap: 0.75rem;
+}
+
+.contact__title {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.contact__info {
+  font-weight: initial;
+  color: var(--text-color);
+}
+
 /*=============== HOME ===============*/
 .home__container {
   row-gap: 3rem;
