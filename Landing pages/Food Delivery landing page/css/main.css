@@ -120,49 +120,6 @@ img {
   justify-self: center;
 }
 
-/*=============== ABOUT ===============*/
-.about__container {
-  gap: 2.5rem;
-}
-
-.about__data {
-  text-align: center;
-}
-
-/*=============== BUTTONS ===============*/
-.button {
-  display: inline-block;
-  background-color: var(--first-color);
-  color: black;
-  padding: 0.75rem 1.5rem;
-  border-radius: 3rem;
-  font-weight: var(--font-semi-bold);
-  transition: 0.3s;
-}
-
-.button:hover {
-  background-color: var(--first-color-alt);
-}
-
-.button__header {
-  display: none;
-}
-
-/*=============== HOME ===============*/
-.home__container {
-  row-gap: 3rem;
-}
-
-.home__title {
-  font-size: var(--biggest-font-size);
-  font-weight: var(--font-bold);
-  margin-bottom: var(--mb-0-75);
-}
-
-.home__description {
-  margin-bottom: var(--mb-2);
-}
-
 /*=============== HEADER ===============*/
 .header {
   width: 100%;
@@ -231,6 +188,58 @@ img {
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+
+/*=============== ABOUT ===============*/
+.about__container {
+  gap: 2.5rem;
+}
+
+.about__content {
+  text-align: center;
+}
+
+/*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: var(--font-semi-bold);
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button__header {
+  display: none;
+}
+
+/*=============== HOME ===============*/
+.home__container {
+  row-gap: 3rem;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-0-75);
+}
+
+.home__description {
+  margin-bottom: var(--mb-2);
+}
+
+/*=============== SECURITY ===============*/
+.security__container {
+  gap: 2.5rem;
+}
+
+.security__description {
+  text-align: center;
 }
 
 /*=============== THEME ===============*/
