@@ -218,6 +218,16 @@ img {
   display: none;
 }
 
+.button-link {
+  background: none;
+  padding: 0;
+  color: var(--title-color);
+}
+
+.button-link:hover {
+  background-color: transparent;
+}
+
 /*=============== HOME ===============*/
 .home__container {
   row-gap: 3rem;
@@ -240,6 +250,27 @@ img {
 
 .security__description {
   text-align: center;
+}
+
+/*=============== SERVICES ===============*/
+.services__container {
+  padding-top: 1rem;
+}
+
+.services__content {
+  display: grid;
+  row-gap: 1rem;
+  background-color: var(--container-color);
+  box-shadow: 0 2px 6px hsla(var(--hue), 100%, 15%, 0.15);
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.services__img {
+  width: 175px;
+  justify-self: center;
+  margin-bottom: var(--mb-0-5);
 }
 
 /*=============== THEME ===============*/
