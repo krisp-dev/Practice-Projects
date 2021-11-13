@@ -52,15 +52,22 @@ window.addEventListener("scroll", scrollActive);
 const scrollHeader = function () {
    const header = document.getElementById("header");
    // If scroll >= 80vh, add the scroll-header class
-   if (this.scrollY >= 80) {
-      header.classList.add("scroll-header");
-   } else {
-      header.classList.remove("scroll-header");
-   }
+   this.scrollY >= 80
+      ? header.classList.add("scroll-header")
+      : header.classList.remove("scroll-header");
 };
 
 window.addEventListener("scroll", scrollHeader);
 
 /*=============== SHOW SCROLL UP ===============*/
+const showScrollUp = function () {
+   const scrollUp = document.getElementById("scrollUp");
+   // If scroll >= 500vh, add the show-scroll class
+   this.scrollY >= 500
+      ? scrollUp.classList.add("show-scroll")
+      : scrollUp.classList.remove("show-scroll");
+};
+
+window.addEventListener("scroll", showScrollUp);
 
 /*=============== DARK LIGHT THEME ===============*/
