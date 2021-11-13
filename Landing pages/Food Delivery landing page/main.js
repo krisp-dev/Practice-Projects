@@ -71,3 +71,39 @@ const showScrollUp = function () {
 window.addEventListener("scroll", showScrollUp);
 
 /*=============== DARK LIGHT THEME ===============*/
+const themeButton = document.getElementById("theme-button");
+const darkTheme = "dark-theme";
+const iconTheme = "bx-toggle-right";
+
+// Previously selected theme
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+// Get current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () =>
+   document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurrentIcon = () =>
+   themeButton.classList.contains(iconTheme)
+      ? "bx-toggle-left"
+      : "bx-toggle-right";
+
+// Check if theme has been already selected
+if (selectedTheme) {
+   // Check if theme was activated or de-activated
+   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+      darkTheme
+   );
+   themeButton.classList[selectedIcon === "bx-toggle-left" ? "add" : "remove"](
+      iconTheme
+   );
+}
+
+// Toggle the theme using toggle button
+themeButton.addEventListener("click", () => {
+   // Toggle theme & icon
+   document.body.classList.toggle(darkTheme);
+   themeButton.classList.toggle(iconTheme);
+   // Save theme & icon to local storage
+   localStorage.setItem("selected-theme", getCurrentTheme());
+   localStorage.setItem("selected-icon", getCurrentIcon());
+});
