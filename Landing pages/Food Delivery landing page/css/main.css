@@ -234,6 +234,22 @@ img {
   top: calc(var(--header-height) + 1rem);
 }
 
+/*=============== ACTIVE LINK ===============*/
+.active-link {
+  position: relative;
+}
+
+.active-link::before {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+}
+
 /*=============== ABOUT ===============*/
 .about__container {
   gap: 2.5rem;

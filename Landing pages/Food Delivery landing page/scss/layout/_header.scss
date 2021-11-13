@@ -57,3 +57,19 @@
 .show-menu {
    top: calc(var(--header-height) + 1rem); // 4rem
 }
+
+/*=============== ACTIVE LINK ===============*/
+.active-link {
+   position: relative;
+
+   &::before {
+      content: "";
+      position: absolute;
+      bottom: -0.75rem;
+      left: 45%;
+      width: 5px;
+      height: 5px;
+      background-color: var(--title-color);
+      border-radius: 50%;
+   }
+}
