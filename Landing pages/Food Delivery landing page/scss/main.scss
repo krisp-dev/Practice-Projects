@@ -6,6 +6,8 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "theme/theme";
+
 @import "layout/layout";
 @import "layout/footer";
 @import "layout/header";
@@ -18,5 +20,7 @@
 @import "components/scroll";
 @import "components/security";
 @import "components/services";
+@import "components/mediaqueries";
 
-@import "theme/theme";
+
+
