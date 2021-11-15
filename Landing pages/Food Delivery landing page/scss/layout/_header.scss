@@ -17,7 +17,7 @@
    align-items: center;
 
    &__menu {
-      @include media(small) {
+      @include media(menu) {
          position: fixed;
          background-color: var(--container-color);
          box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);

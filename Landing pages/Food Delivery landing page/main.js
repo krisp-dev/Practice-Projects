@@ -70,7 +70,7 @@ const showScrollUp = function () {
 
 window.addEventListener("scroll", showScrollUp);
 
-/*=============== DARK LIGHT THEME ===============*/
+/*=============== DARK THEME SWITCHER ===============*/
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "bx-toggle-right";
@@ -79,7 +79,7 @@ const iconTheme = "bx-toggle-right";
 const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
 
-// Get current theme that the interface has by validating the dark-theme class
+// Get current theme by validating the dark-theme class
 const getCurrentTheme = () =>
    document.body.classList.contains(darkTheme) ? "dark" : "light";
 const getCurrentIcon = () =>

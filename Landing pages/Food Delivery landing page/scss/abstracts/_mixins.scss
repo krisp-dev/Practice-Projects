@@ -1,8 +1,22 @@
 /*=============== MEDIA QUERY MANAGER ===============*/
 @mixin media($breakpoint) {
    @if $breakpoint == small {
+      //360px / 16 = 22.5em
+      @media (max-width: 22.5em) {
+         @content;
+      }
+   }
+
+   @if $breakpoint == menu {
       //767px / 16 = 47.9375em
       @media (max-width: 47.9375em) {
+         @content;
+      }
+   }
+
+   @if $breakpoint == medium {
+      //576px / 16 = 36em
+      @media (min-width: 36em) {
          @content;
       }
    }
