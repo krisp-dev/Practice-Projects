@@ -1,0 +1,22 @@
+/*=============== MAIN FILES IMPORT ===============*/
+@import "abstracts/fonts";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "theme/theme";
+
+@import "layout/cart";
+@import "layout/footer";
+@import "layout/header";
+
+@import "components/about";
+@import "components/home";
+@import "components/new";
+@import "components/newsletter";
+@import "components/products";
+@import "components/s-series";
+@import "components/testimonials";

@@ -1,0 +1,41 @@
+/*=============== BASE ===============*/
+*,
+::before,
+::after {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+html {
+   scroll-behavior: smooth;
+   font-size: 62.5%; // 1rem = 10px,   10px/16px = 62.5
+}
+
+body {
+   margin: 0;
+   background-color: var(--clr-body);
+   color: var(--clr-text);
+}
+
+button,
+input {
+   font-family: var(--body-font);
+   font-size: var(--normal-font-size);
+   cursor: pointer;
+   border: none;
+   outline: none;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}

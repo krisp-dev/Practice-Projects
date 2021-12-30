@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,qDAAqD",
+    "sources": [
+        "../main.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

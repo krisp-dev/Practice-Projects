@@ -1,0 +1,26 @@
+/*=============== REUSABLE CLASSES ===============*/
+.container {
+   max-width: 102.4rem;
+   margin: 0 2.4rem;
+}
+
+.grid {
+   display: grid;
+}
+
+.main {
+   overflow: hidden;
+}
+
+.section {
+   padding: 10rem 0 1.5rem;
+}
+
+.section__title {
+   position: relative;
+   font-size: var(--h3-font-size);
+   margin-bottom: 4.8rem;
+   text-transform: uppercase;
+   letter-spacing: 0.2rem;
+   text-align: center;
+}

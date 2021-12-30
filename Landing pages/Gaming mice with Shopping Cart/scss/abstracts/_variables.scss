@@ -1,0 +1,19 @@
+/*=============== VARIABLES ===============*/
+:root {
+   --header-height: 5.6rem;
+
+   /*========== Colors ==========*/
+   --clr-primary: hsl(31, 100%, 70%);
+   --clr-button: hsl(0, 0%, 17%);
+   --clr-button-secondary: hsl(0, 0%, 21%);
+   --clr-title: hsl(0, 0%, 15%);
+   --clr-text: hsl(0, 0%, 35%);
+   --clr-text-light: hsl(0, 0%, 55%);
+   --clr-body: hsl(0, 0%, 99%);
+   --clr-container: hsl(0, 0%, 100%);
+   --clr-border: hsl(0, 0%, 94%);
+
+   /*========== Z index ==========*/
+   --z-tooltip: 10;
+   --z-fixed: 100;
+}
