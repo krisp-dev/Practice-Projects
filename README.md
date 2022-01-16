@@ -10,4 +10,4 @@ A repository of small scale projects to help with reinforcing my skills, and lea
 - Pig game [**(Live Demo)**](https://krisp-dev.github.io/Practice-Projects/JavaScript/Pig%20dice%20game/index.html)
 
 #### Landing Pages
-- Food Delivery landing page [**(Live Demo)**]()
+- Food Delivery landing page [**(Live Demo)**](https://krisp-dev.github.io/Practice-Projects/Landing%20pages/Food%20Delivery%20landing%20page/index.html#)
