@@ -12,16 +12,21 @@
          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
          crossorigin="anonymous"
       />
-
       <!--=============== FONTAWESOME ===============-->
-
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <!--=============== OWL CAROUSEL ===============-->
+      <link rel="stylesheet" href="owl.carousel.min.css" />
       <!--=============== MAIN CSS ===============-->
       <link rel="stylesheet" href="main.css" />
+
       <title>Document</title>
    </head>
    <body>
       <!--=============== NAVBAR START ===============-->
-      <nav class="navbar navbar-expand-md">
+      <nav class="navbar navbar-expand-md fixed-top">
          <div class="container">
             <!-- Brand -->
             <a class="navbar-brand" href="index.html">Crypto App</a>
@@ -57,18 +62,113 @@
       </nav>
       <!--=============== NAVBAR END ===============-->
 
-      <!--=============== HOME SECTION START ===============-->
-      <section class="home">
-         <div class="container"></div>
+      <!--=============== HERO START ===============-->
+      <section class="hero d-flex align-items-center">
+         <div class="hero-anim">
+            <i class="fas fa-plus anim anim-1"></i>
+            <i class="fas fa-plus anim anim-2"></i>
+            <i class="fas fa-circle anim anim-3"></i>
+         </div>
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-7">
+                  <div class="hero-text">
+                     <h1>Lorem ipsum dolor sit, amet consectetur.</h1>
+                     <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Nam ipsa eius doloremque reprehenderit dolore
+                        beatae.
+                     </p>
+                     <div class="hero-btn">
+                        <a href="#" class="btn btn-1">Get Started</a>
+                        <button type="button" class="btn btn-1 btn-video">
+                           <i class="fas fa-play"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-5 text-center">
+                  <div class="hero-img">
+                     <img src="images/feature-device.png" alt="Device" />
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="custom-shape-divider-bottom-1642510678">
+            <svg
+               data-name="Layer 1"
+               xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 1200 120"
+               preserveAspectRatio="none"
+            >
+               <path
+                  d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+                  class="shape-fill"
+               ></path>
+            </svg>
+         </div>
       </section>
+      <!--=============== HERO END ===============-->
 
-      <!--=============== HOME SECTION END ===============-->
+      <!--=============== FEATURES START ===============-->
+      <section class="features section-padding">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-lg-8">
+                  <div class="section-title">
+                     <h2>Awesome <span>Features</span></h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="owl-carousel features-carousel">
+                  <div class="feature-item">
+                     <div class="icon"><i class="fas fa-code"></i></div>
+                     <h3>feature 1</h3>
+                     <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Molestiae a beatae nesciunt numquam dolore.
+                        Dolores.
+                     </p>
+                  </div>
 
-      <!--=============== BOOTSTRAP JS ===============-->
+                  <div class="feature-item">
+                     <div class="icon"><i class="fas fa-code"></i></div>
+                     <h3>feature 1</h3>
+                     <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Molestiae a beatae nesciunt numquam dolore.
+                        Dolores.
+                     </p>
+                  </div>
+
+                  <div class="feature-item">
+                     <div class="icon"><i class="fas fa-code"></i></div>
+                     <h3>feature 1</h3>
+                     <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Molestiae a beatae nesciunt numquam dolore.
+                        Dolores.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--=============== FEATURES END ===============-->
+
+      <!--=============== JQUERY ===============-->
+      <script src="jquery.min.js"></script>
+      <!--=============== BOOTSTRAP & POPPER ===============-->
       <script
          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
          crossorigin="anonymous"
       ></script>
+      <!--=============== MAIN JS ===============-->
+      <script src="main.js"></script>
+      <!--=============== OWL CAROUSEL ===============-->
+      <script src="owl.carousel.min.js"></script>
    </body>
 </html>

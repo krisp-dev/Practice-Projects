@@ -57,6 +57,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
+  line-height: 1.5;
   font-weight: 400;
   overflow-x: hidden;
   background-color: #ffffff;
@@ -68,18 +69,119 @@ img {
 ul {
   list-style: none;
 }
+/*========== UTILITIES ==========*/
+.section-padding {
+  padding: 40px 0;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  font-size: 40px;
+  color: black;
+  font-weight: 700;
+}
+.section-title span {
+  color: #7867fe;
+}
+/*========== BUTTONS ==========*/
+.btn-1 {
+  background-color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  color: #7867fe;
+  font-size: 16px;
+  transition: all 0.5s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+}
+.btn-1:focus {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.btn-1:hover {
+  color: #ffffff;
+  background-color: #7867fe;
+}
+/*========== ANIMATIONS ==========*/
+@keyframes bounceTop {
+  0%,
+  100% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.94);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(0.94);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.anim {
+  position: absolute;
+  z-index: -1;
+}
+.anim-1 {
+  left: 20%;
+  top: 20%;
+  font-size: 20px;
+  color: #f5ae10;
+  animation: spinner 5s linear infinite;
+}
+.anim-2 {
+  right: 5%;
+  top: 10%;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  animation: spinner 7s linear infinite;
+}
+.anim-3 {
+  left: 5%;
+  bottom: 30%;
+  font-size: 25px;
+  color: #09d69c;
+  animation: bounceTop 4s linear infinite;
+}
 /*========== NAVBAR ==========*/
 .navbar {
-  background-color: #7867fe;
+  background-color: transparent;
   padding: 20px 0;
+  transition: all 0.5s ease;
+}
+.navbar-shrink {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  background-color: #7867fe;
 }
 .navbar .container {
-  padding: 15px 0;
+  padding: 0 15px;
 }
 .navbar-brand {
   font-size: 30px;
   color: #ffffff;
   font-weight: 500;
+}
+.navbar-brand:hover {
+  color: #ffffffbb;
 }
 .navbar .nav-item {
   margin-left: 40px;
@@ -104,4 +206,65 @@ ul {
 .navbar .nav-item .nav-link:hover::before {
   transform: scale(1);
 }
-/*========== HOME SECTION ==========*/
+/*========== HERO SECTION ==========*/
+.hero {
+  min-height: 100vh;
+  padding: 150px 0;
+  background-color: #7867fe;
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 300;
+}
+.hero img {
+  max-width: 250px;
+  width: 100%;
+  animation: bounceTop 3s ease infinite;
+}
+.hero-btn {
+  margin-top: 40px;
+}
+.hero-btn button {
+  margin-left: 30px;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  animation: pulse 2s ease infinite;
+}
+.hero-btn button:hover {
+  animation: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.hero-btn button i {
+  line-height: 50px;
+}
+.custom-shape-divider-bottom-1642510678 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1642510678 svg {
+  position: relative;
+  display: block;
+  width: calc(130% + 1.3px);
+  height: 180px;
+  transform: rotateY(180deg);
+}
+.custom-shape-divider-bottom-1642510678 .shape-fill {
+  fill: #ffffff;
+}
+/*========== FEATURES SECTION ==========*/
